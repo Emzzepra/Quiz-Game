@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd Quiz Game.</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <div class="start_btn">
+      <button>Start Quiz!!</button>
+    </div>
+
+    <!-- Rules Box -->
+    <div class="rules_box">
+      <div class="rules_title">Instructions</div>
+      <div class="rules_list">
+        <div class="rules">1. This quiz contains 10-15 questions.</div>
+        <br />
+        <div class="rules">2. You get 1 point for each correct answer.</div>
+        <br />
+        <div class="rules">
+          3. You have only <span>15 seconds</span> per question.
+        </div>
+        <br />
+        <div class="rules" .>
+          4. At the end of the quiz, you get your score.
+        </div>
+        <br />
+        <div class="rules">5. You can't exit from the quiz while playing.</div>
+      </div>
+
+      <div class="buttons">
+        <button class="exit">Exit</button>
+        <button class="start">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Quiz</div>
+        <div class="timer">
+          <div class="time_text">Time Left</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+
+      <section>
+        <div class="txt_que">
+          <span> What is the largest animal in the world?</span>
+        </div>
+
+        <div class="options">
+          <ul>
+            <li class="option_list">
+              <input type="radio"  id="shark" name="animal" value="Shark" />
+              <label for="shark">Shark</label><br />
+              <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+            </li>
+
+            <li class="option_list">
+              <input type="radio"  id="blue whale" name="animal" value="Blue Whale" />
+              <label for="blue whale">Blue Whale</label><br />
+              <div class="icon cross"><i class="fa-solid fa-xmark"></i>  </div>
+            </li>
+
+            <li class="option_list">
+              <input type="radio"  id="elephant" name="animal" value="Elephant" />
+              <label for="elephant">Elephant</label><br />
+            </li>
+
+            <li class="option_list">
+              <input type="radio"  id="giraffe" name="animal value="Giraffe"/>
+              <label for="giraffe">Giraffe</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <div class="nxt_que">
+          <button>
+            Next <span><i class="bi bi-arrow-right-short"></i></span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+
+    
+<div class="result_box">
+  <div class="icon">
+    <iconify-icon icon="fa6-solid:crown" style="color: blue;" width="150"></iconify-icon>
+  </div>
+  <div class="complete_text">You've completed the Quiz!</div>
+  <div class="score_text">
+    <p>and sorry, You got only <span>2</span> out of <span>10</span> </p>
+
+  </div>
+
+  <div class="buttons">
+    <button class="restart">Replay Quiz</button>
+    <button class="quit">Quit Quiz</button>
+
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>
+
+ 
